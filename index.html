@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>120 Fichas Visuales de Mecánica de Bicicletas</title>
+<meta name="description" content="120 fichas visuales de mecánica de bicicletas en 10 áreas">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto;overflow-x:clip}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#1e293b;overflow-x:hidden;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+img{max-width:100%;height:auto}
+.wrap{max-width:1024px;margin:0 auto;padding:0 16px}
+.urgency{background:#050B14;color:rgba(255,255,255,.92);font-size:14px;padding:10px 8px;text-align:center;text-transform:uppercase;letter-spacing:.06em;font-weight:700;line-height:1.4;border-bottom:1px solid rgba(0,163,255,.25);display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:8px;white-space:nowrap;overflow:hidden}
+.urgency .timer{color:#ef4444;font-weight:900;font-variant-numeric:tabular-nums;margin-left:0;white-space:nowrap;flex:0 0 auto;min-width:70px;text-align:center;display:inline-block}
+@media(max-width:640px){.urgency{font-size:11px;padding:8px 6px;letter-spacing:.02em;gap:6px}}
+.hero{background:radial-gradient(ellipse 70% 55% at 50% -5%,rgba(0,163,255,.18),transparent 70%),radial-gradient(ellipse 45% 35% at 85% 105%,rgba(2,32,71,.55),transparent 70%),radial-gradient(ellipse 40% 30% at 8% 90%,rgba(0,163,255,.06),transparent 70%),linear-gradient(180deg,#020617 0%,#030a18 55%,#010409 100%);color:#fff;position:relative;overflow:hidden;padding:40px 0 64px}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,163,255,.03) 0%,transparent 25%,transparent 70%,rgba(1,4,9,.8) 100%);pointer-events:none;z-index:0}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(0,163,255,.08) 1px,transparent 1px),linear-gradient(to bottom,rgba(0,163,255,.08) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);pointer-events:none;z-index:0}
+.hero-inner{position:relative;z-index:1;max-width:1024px;margin:0 auto;padding:0 16px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:30px;color:#00A3FF;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(0,163,255,.3);padding:6px 16px;border-radius:999px;background:rgba(0,163,255,.05)}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:#facc15;flex:0 0 auto}
+.hero h1{font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#E2E8F0;max-width:900px;margin-bottom:24px;text-shadow:0 1px 0 rgba(2,6,23,.9),0 2px 0 rgba(2,6,23,.75),0 3px 0 rgba(2,6,23,.55),0 4px 0 rgba(2,6,23,.35),0 8px 18px rgba(0,0,0,.5);transform:perspective(600px) rotateX(3deg)}
+.hero h1 span{color:#0284C7;text-shadow:0 1px 0 #082f49,0 2px 0 #075985,0 3px 0 #0c4a6e,0 4px 0 #082f49,0 8px 18px rgba(0,0,0,.6)}
+.lead{font-size:16px;line-height:1.65;color:#F1F5F9;max-width:760px;margin-bottom:16px;font-weight:600;text-shadow:0 1px 8px rgba(2,6,23,.8)}
+.lead2{font-size:13px;line-height:1.6;color:#94a3b8;margin-bottom:40px}
+.mockup{width:100%;max-width:768px;min-height:260px;border-radius:16px;background:linear-gradient(135deg,#0A1628 0%,#12345E 55%,#0A1628 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:32px;margin-bottom:28px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(0,163,255,.25)}
+.mockup small{color:#7dd3fc;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}
+.mockup strong{color:#E2E8F0;font-size:22px;font-weight:900;letter-spacing:-.02em;text-align:center;line-height:1.3}
+.mockup p{color:#94a3b8;font-size:13px;text-align:center}
+.mockup-img{width:100%;max-width:768px;height:auto;aspect-ratio:1441/1086;object-fit:contain;border-radius:0;display:block;margin-bottom:28px;filter:drop-shadow(0 25px 35px rgba(0,0,0,.45));background:transparent;animation:mockPulse 3s ease-in-out infinite}
+@keyframes mockPulse{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.02) translateY(-3px)}}
+.ctas{display:flex;flex-direction:column;gap:16px;width:100%;justify-content:center;margin-bottom:30px}
+.btn{display:block;width:100%;text-align:center;padding:16px 32px;border-radius:6px;font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;border:none;transition:background .2s}
+.btn-blue{background:#00A3FF;color:#fff;box-shadow:0 0 15px rgba(0,163,255,.3)}
+.btn-blue:hover{background:#3b82f6}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{background:rgba(255,255,255,.05)}
+.checks{display:flex;flex-direction:column;align-items:flex-start;gap:12px;font-size:14px;color:#cbd5e1;margin-bottom:8px;text-align:left}
+.checks div{display:flex;align-items:center;gap:8px}
+section{padding:40px 0}
+.sec-light{background:#f8fafc}
+.sec-white{background:#fff}
+.sec-slate{background:#f1f5f9}
+.kicker{display:block;text-align:center;color:#00A3FF;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+.center-title{text-align:center;font-size:22px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#1E40AF;margin-bottom:8px}
+@media(min-width:768px){.center-title{font-size:24px}}
+.center-sub{text-align:center;color:#64748b;font-size:14px;line-height:1.6;max-width:640px;margin:0 auto}
+.marquee-outer{overflow:hidden;position:relative;padding-bottom:16px;-webkit-mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent)}
+.marquee{display:flex;gap:24px;width:max-content;animation:mq 40s linear infinite}
+.marquee.rev{animation:mqrev 35s linear infinite}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mqrev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.card-item{display:flex;flex-direction:column;align-items:center;text-align:center;width:200px;flex-shrink:0}
+.card-thumb{width:100%;aspect-ratio:3/4;border-radius:10px;border:1px solid #e2e8f0;background:linear-gradient(160deg,#fff 0%,#e0f2fe 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;margin-bottom:12px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.card-thumb .ph{width:44px;height:44px;border-radius:10px;background:#0A1628;color:#38bdf8;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px}
+.card-thumb span.t{font-size:11px;font-weight:800;color:#334155;line-height:1.3}
+.card-thumb img{width:100%;height:100%;object-fit:cover;border-radius:8px;object-position:top center;display:block}
+.card-item label{font-size:11px;font-weight:800;color:#334155;line-height:1.3}
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:1fr}
+.pub-card{border:1px solid #e2e8f0;border-radius:12px;padding:24px;background:#fff;position:relative;overflow:hidden;transition:box-shadow .2s}
+.pub-card:hover{box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.pub-num{color:#00A3FF;font-size:13px;font-weight:800;margin-bottom:12px}
+.pub-card h3{font-size:16px;font-weight:800;color:#0f172a;margin-bottom:8px}
+.pub-card p{font-size:13px;color:#64748b;line-height:1.6}
+.pub-num-inline{color:#00A3FF;font-size:12px;font-weight:800;margin-right:8px}
+@media(max-width:640px){
+.publico-sec{padding:28px 0 !important}
+.publico-head{margin-bottom:20px !important}
+.publico-sec .center-title{font-size:22px;margin-bottom:8px}
+.publico-sec .grid{grid-template-columns:1fr 1fr;gap:10px}
+.publico-sec .pub-card{padding:12px;min-height:0}
+.publico-sec .pub-num{font-size:10px;margin-bottom:4px}
+.publico-sec .pub-card h3{font-size:12px;margin-bottom:3px;line-height:1.25}
+.publico-sec .pub-card p{font-size:10.5px;line-height:1.45}
+}
+@media(max-width:640px){
+.todo-sec{padding:28px 0 !important}
+.todo-sec .split{gap:20px}
+.todo-sec .split-img{min-height:150px;padding:20px}
+.todo-sec .split-img.todo-img{min-height:auto;padding:0}
+.todo-sec .split-img strong{font-size:20px}
+.todo-sec .pill{margin-bottom:14px;padding:5px 12px}
+.todo-sec .split h2{font-size:21px;margin-bottom:10px}
+.todo-sec .split .desc{font-size:13.5px;margin-bottom:8px;line-height:1.55}
+.todo-sec .org-grid{grid-template-columns:1fr 1fr;gap:8px}
+.todo-sec .org-item{padding:10px;gap:6px;font-size:11px;line-height:1.35;border-radius:10px}
+.todo-sec .ficha-grid{grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:16px}
+.todo-sec .ficha-body{padding:12px;min-height:90px;font-size:11px}
+.todo-sec .ficha-head{font-size:10px;padding:10px 8px}
+}
+.special-box{max-width:896px;margin:0 auto;border:1px solid #e2e8f0;border-radius:16px;padding:32px 24px;text-align:center;background:#f8fafc;position:relative}
+.special-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#fff;padding:0 16px}
+.special-tag span{font-size:9px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#94a3b8;border:1px solid #e2e8f0;border-radius:999px;padding:4px 12px;white-space:nowrap}
+.special-box h2{font-size:22px;font-weight:900;color:#0f172a;margin-bottom:12px;line-height:1.3}
+.special-box p{color:#475569;font-size:14px;line-height:1.6;max-width:640px;margin:0 auto 24px}
+.btn-inline{display:inline-block;padding:16px 32px;border-radius:6px;background:#00A3FF;color:#fff;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.05em;box-shadow:0 10px 15px rgba(59,130,246,.2);border:none}
+.split{max-width:1280px;margin:0 auto;padding:0 16px;display:grid;gap:32px}
+.split-img{min-height:300px;border-radius:16px;background:linear-gradient(160deg,#0A1628,#1e3a5f);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:32px;text-align:center}
+.split-img.todo-img{background:transparent;padding:0;min-height:auto;display:block}
+.split-img.todo-img img{width:100%;height:auto;display:block;border-radius:16px}
+.split-img strong{color:#fff;font-size:28px;font-weight:900}
+.split-img p{color:#7dd3fc;font-size:13px}
+.pill{display:inline-block;background:#E5F6FF;color:#00A3FF;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:6px 16px;border-radius:999px;margin-bottom:24px}
+.split h2{font-size:28px;line-height:1.2;font-weight:900;color:#1E40AF;letter-spacing:-.02em;margin-bottom:16px}
+.split .desc{font-size:16px;color:#475569;line-height:1.6;margin-bottom:16px}
+.org-grid{display:grid;gap:16px;grid-template-columns:1fr}
+.org-item{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 1px 2px rgba(0,0,0,.04);font-size:13px;font-weight:600;color:#0F172A;line-height:1.4}
+.ficha-grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:24px}
+.ficha{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.ficha-head{background:#0A1628;color:#fff;padding:16px;text-align:center;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.ficha-body{padding:24px;text-align:center;color:#64748b;font-size:13px;min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.bonus-grid{grid-template-columns:1fr}
+.bonus{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05);display:flex;flex-direction:column}
+.bonus-head{background:#fff;padding:0;display:block;position:relative;aspect-ratio:4/3;overflow:hidden}
+.bonus-head img{width:100%;height:100%;object-fit:contain;display:block}
+.bonus-body .tag{font-size:10px;font-weight:800;color:#00A3FF;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(0,163,255,.3);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:10px}
+.bonus-head h3{color:#fff;font-size:13px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;line-height:1.4;padding:0 8px;position:relative;z-index:1}
+.bonus-head .dig{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);font-size:10px;color:#facc15;font-weight:800;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.bonus-head .dig i{width:6px;height:6px;border-radius:50%;background:#facc15;display:inline-block}
+.bonus-ic{width:48px;height:48px;color:#00A3FF;margin-bottom:12px;position:relative;z-index:1}
+.bonus-body{padding:16px;flex:1;display:flex;flex-direction:column}
+.bonus-body .ico{width:32px;height:32px;border-radius:50%;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.bonus-body h4{font-size:12px;font-weight:800;color:#0f172a;text-transform:uppercase;margin-bottom:6px;line-height:1.3}
+.bonus-body p{font-size:11.5px;color:#64748b;line-height:1.5;margin-bottom:0}
+.steps{grid-template-columns:1fr 1fr;gap:16px}
+.step{text-align:center;display:flex;flex-direction:column;align-items:center}
+.step div.n{width:48px;height:48px;border-radius:50%;background:#E5F6FF;color:#00A3FF;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;margin-bottom:16px}
+.step h3{font-size:13px;font-weight:800;color:#0f172a;margin-bottom:8px}
+.step p{font-size:12px;color:#64748b;line-height:1.6;max-width:220px}
+@media(max-width:767px){.steps>*:last-child{grid-column:1/-1;justify-self:center;width:100%;max-width:280px}}
+@media(max-width:640px){
+.paso-sec{padding:28px 0 !important}
+.paso-head{margin-bottom:20px !important}
+.step div.n{width:36px;height:36px;font-size:15px;margin-bottom:8px}
+.step h3{font-size:12px;margin-bottom:4px;line-height:1.3}
+.step p{font-size:10.5px;line-height:1.5}
+}
+.pricing{background:#fff;color:#0f172a}
+.price-grid{display:grid;gap:32px;max-width:896px;margin:0 auto;padding-top:16px}
+.price-card{background:#fff;color:#0f172a;border-radius:16px;padding:32px;display:flex;flex-direction:column;margin-top:32px;border:1px solid #e2e8f0;box-shadow:0 12px 32px rgba(15,23,42,.08)}
+.price-card.pro{background:linear-gradient(165deg,#010409 0%,#030a18 50%,#0A1628 100%);color:#fff;border:2px solid #00A3FF;box-shadow:0 25px 50px rgba(0,0,0,.5);position:relative;overflow:hidden}
+.price-card.pro::after{content:"";position:absolute;top:0;left:0;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.13),transparent);transform:translateX(-160%) skewX(-20deg);animation:cardShine 3.5s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes borderGlow{0%,100%{box-shadow:0 25px 50px rgba(0,0,0,.5),0 0 0 2px rgba(0,163,255,.35)}50%{box-shadow:0 25px 50px rgba(0,0,0,.6),0 0 24px rgba(0,163,255,.65),0 0 0 3px rgba(0,163,255,.8)}}
+@keyframes cardShine{0%{transform:translateX(-160%) skewX(-20deg)}55%,100%{transform:translateX(280%) skewX(-20deg)}}
+.price-card.pro>*{position:relative;z-index:2}
+.price-card.pro::before{content:"";position:absolute;top:-60px;right:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(0,163,255,.55),transparent 70%);pointer-events:none}
+.price-card.pro .eyebrow{color:#7dd3fc}
+.price-card.pro h3{color:#fff}
+.price-card.pro .sub{color:#cbd5e1}
+.price-card.pro .plist li{color:#e2e8f0}
+.price-card.pro .price-thumb{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);position:relative;z-index:1}
+.price-thumb.complete-img{padding:0;background:transparent;border:none;min-height:auto;overflow:hidden}
+.price-thumb.complete-img img{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 20px rgba(0,0,0,.4))}
+.price-card.pro .now + div{color:#cbd5e1 !important}
+.price-card.pro .btn-block{box-shadow:0 10px 25px rgba(0,163,255,.45)}
+.price-thumb{min-height:180px;border-radius:10px;background:linear-gradient(140deg,#0A1628,#1e3a5f);display:flex;align-items:center;justify-content:center;color:#7dd3fc;font-weight:900;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px;color:#64748b}
+.eyebrow.blue{color:#00A3FF}
+.price-card h3{font-size:18px;font-weight:800;margin-bottom:16px;line-height:1.4}
+.now{display:flex;align-items:baseline;gap:4px;margin-bottom:8px}
+.now strong{font-size:24px;font-weight:900;line-height:1.2}
+.now em{font-style:normal;font-size:11px;color:#64748b;font-weight:600}
+.price-card .sub{font-size:11px;color:#64748b;margin-bottom:32px;line-height:1.5}
+.plist{list-style:none;margin-bottom:32px;flex:1;display:flex;flex-direction:column;gap:12px;font-size:13px}
+.plist li{display:flex;gap:8px;align-items:flex-start;line-height:1.4}
+.btn-outline{border:2px solid #e2e8f0;background:#fff;color:#334155;border-radius:6px;padding:16px;font-weight:800;font-size:13px;text-transform:uppercase;width:100%}
+.btn-block{width:100%;text-align:center;padding:16px;border-radius:6px;background:#00A3FF;color:#fff;font-weight:800;font-size:13px;text-transform:uppercase;border:none}
+.guar-box{max-width:896px;margin:0 auto;background:#fff;border:1px solid #f1f5f9;border-radius:24px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:32px;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+.seal{width:160px;height:160px;border-radius:50%;border:4px solid #facc15;outline:4px dashed rgba(250,204,21,.6);outline-offset:6px;background:radial-gradient(circle at 35% 30%,#1E293B,#0A1628);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:14px;box-shadow:0 15px 35px rgba(0,0,0,.35),inset 0 0 0 6px rgba(250,204,21,.18);position:relative;flex:0 0 auto;text-align:center;line-height:1.2}
+.seal-star{font-size:26px;color:#facc15;line-height:1}
+.seal-top{font-size:10px;letter-spacing:.25em;color:#facc15;margin-top:4px}
+.seal-num{font-size:22px;margin-top:2px}
+.seal-img{width:160px;height:160px;object-fit:contain;display:block;filter:drop-shadow(0 10px 20px rgba(0,0,0,.25))}
+@media(min-width:1024px){.seal-img{width:192px;height:192px}}
+.seal-tag{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#facc15,#fbbf24);color:#0f172a;font-weight:900;font-size:11px;padding:8px 20px;border-radius:999px;letter-spacing:.15em;text-transform:uppercase;white-space:nowrap}
+.guar-txt{text-align:center}
+.guar-txt h2{font-size:28px;font-weight:900;color:#16A34A;margin-bottom:20px;line-height:1.2}
+.guar-txt p{color:#475569;font-size:14px;line-height:1.6;margin-bottom:16px}
+.faq-item{background:#fff;border:1px solid #f1f5f9;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,.04);overflow:hidden;margin-bottom:12px}
+.faq-btn{width:100%;background:#fff;border:none;text-align:left;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:800;font-size:13px;color:#334155}
+.faq-panel{padding:0 24px;max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-panel p{font-size:13px;color:#64748b;line-height:1.6;padding-bottom:20px}
+footer{background:#f8fafc;color:#64748b;padding:48px 0 0;border-top:1px solid #e2e8f0;text-align:center}
+footer h3{font-size:16px;font-weight:900;color:#0f172a;margin-bottom:12px;letter-spacing:-.01em}
+footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-height:1.6}
+.contact{display:flex;flex-direction:column;gap:16px;justify-content:center;margin-bottom:40px;font-size:13px;font-weight:600;color:#334155}
+.footbar{width:100%;display:flex;flex-direction:column;gap:24px;justify-content:space-between;padding:32px 0;border-top:1px solid #e2e8f0;font-size:11px;color:#64748b}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+@media(min-width:640px){.ctas{flex-direction:row}.btn{width:auto}.org-grid{grid-template-columns:1fr 1fr}.bonus-grid{grid-template-columns:1fr 1fr}.bonus-grid>*:last-child{grid-column:1/-1;justify-self:center;width:100%;max-width:420px}.todo-sec .org-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.contact{flex-direction:row;align-items:center}.ficha-grid{grid-template-columns:1fr 1fr 1fr}}
+@media(min-width:768px){.hero{padding:64px 0 96px}.hero h1{font-size:44px}.lead{font-size:17px}.price-grid{grid-template-columns:1fr 1fr}.guar-box{flex-direction:row;padding:48px}.guar-txt{text-align:left}.split{grid-template-columns:5fr 7fr;align-items:center;gap:64px}.steps{grid-template-columns:repeat(5,1fr)}.card-item{width:260px}.special-box{padding:48px}.footbar{flex-direction:row;align-items:center}}
+@media(min-width:1024px){.hero h1{font-size:56px}.grid-3{grid-template-columns:1fr 1fr 1fr}.bonus-grid{grid-template-columns:1fr 1fr 1fr 1fr}.bonus-grid>*:last-child{grid-column:2/4;max-width:none}.price-card.pro{transform:translateY(-16px)}.seal{width:192px;height:192px}}
+</style>
+</head>
+<body>
+<div class="urgency"><span>La oferta termina hoy <span id="urgencyDate">09/11/2026</span></span><span class="timer" id="urgencyTimer">--:--:--</span></div>
+<section class="hero"><div class="hero-inner">
+<h1><span>120 FICHAS VISUALES DE MECÁNICA DE BICICLETAS</span></h1>
+<p class="lead">Una biblioteca visual con imágenes, posibles causas y puntos de revisión para saber qué comprobar primero cuando aparece una falla.</p>
+<img class="mockup-img" src="mockup-transparent.webp" alt="Mockup del producto con fichas reales visibles de mecánica de bicicletas" width="1441" height="1086" fetchpriority="high" decoding="async">
+<div class="ctas"><button type="button" class="btn btn-blue">QUIERO ACCEDER A LAS 120 FICHAS</button></div>
+<div class="checks"><div><span style="color:#00A3FF;font-weight:900">✓</span> Material digital para descargar e imprimir</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Acceso tras la confirmación del pago</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Pago único, sin mensualidades</div></div>
+</div></section>
+
+<section id="contenido" class="sec-light"><div class="wrap" style="max-width:1152px">
+<div style="text-align:center;margin-bottom:40px"><span class="kicker">CONTENIDO</span><h2 class="center-title">TODO LO QUE TENDRÁS DENTRO DE LAS 120 FICHAS</h2><p class="center-sub">Una biblioteca de consulta para reconocer componentes, revisar posibles causas y entender por dónde empezar cuando algo falla.</p><p class="center-sub" style="margin-top:12px;font-weight:800;color:#0f172a">10 áreas con 12 fichas en cada una.</p></div>
+<div class="marquee-outer"><div class="marquee" id="marquee1"></div></div>
+<div class="marquee-outer" style="margin-top:8px"><div class="marquee rev" id="marquee2"></div></div>
+<p style="text-align:center;color:#64748b;font-size:12px;margin-top:8px">Fichas reales en formato WebP — ejemplos de las 120 fichas.</p>
+</div></section>
+
+<section class="sec-white publico-sec"><div class="wrap">
+<div class="publico-head" style="text-align:center;margin-bottom:40px"><span class="kicker">PÚBLICO</span><h2 class="center-title">¿PARA QUIÉN SON ESTAS FICHAS?</h2></div>
+<div class="grid grid-3">
+<div class="pub-card"><div class="pub-num">01</div><h3>Mecánicos de bicicletas</h3><p>Que quieren tener los puntos de revisión a mano durante el trabajo.</p></div>
+<div class="pub-card"><div class="pub-num">02</div><h3>Estudiantes de mecánica</h3><p>Que buscan una forma visual de aprender y repasar componentes y fallas.</p></div>
+<div class="pub-card"><div class="pub-num">03</div><h3>Quienes están empezando</h3><p>Que necesitan orientación para saber qué revisar primero.</p></div>
+<div class="pub-card"><div class="pub-num">04</div><h3>Ciclistas</h3><p>Que quieren entender mejor los ruidos, las holguras y los problemas de su bicicleta.</p></div>
+<div class="pub-card"><div class="pub-num">05</div><h3>Aficionados al mantenimiento</h3><p>Que buscan organizar sus revisiones y consultar posibles causas.</p></div>
+<div class="pub-card"><div class="pub-num">06</div><h3>Encargados de talleres</h3><p>Que quieren sumar material de consulta a sus revisiones y registros de servicio.</p></div>
+</div></div></section>
+
+<section class="sec-light todo-sec"><div class="split"><div class="split-img todo-img"><img src="todo.webp" alt="Mira cómo te ayuda esta ficha - Ficha 06 El cambio no sube de marcha" width="1100" height="825" loading="lazy" decoding="async" style="aspect-ratio:1100/825"></div><div><span class="pill">TODO ORGANIZADO</span><h2>LA INFORMACIÓN QUE NECESITAS CONSULTAR, REUNIDA EN UNA FICHA</h2><p class="desc" style="font-weight:800;color:#0F172A">¿El cambio falla, la rueda roza o apareció un ruido?</p><p class="desc">Busca la ficha relacionada con el síntoma, identifica la pieza y consulta las posibles causas y los puntos de revisión.</p><div class="org-grid" id="organizedGrid"></div></div></div></section>
+
+<section class="sec-slate"><div class="wrap" style="max-width:1152px"><div style="text-align:center;margin-bottom:40px"><span class="kicker">EXTRAS</span><h2 class="center-title">Y ADEMÁS, CON EL ACCESO COMPLETO RECIBIRÁS ESTOS 5 BONOS</h2></div><div class="grid bonus-grid" id="bonusGrid"></div></div></section>
+
+<section class="sec-white paso-sec"><div class="wrap"><div class="paso-head" style="text-align:center;margin-bottom:40px"><span class="kicker">PASO A PASO</span><h2 class="center-title">ACCEDE AL MATERIAL Y TENLO LISTO PARA CONSULTAR</h2><p class="center-sub">Compra simple, entrega digital y consulta desde tus dispositivos.</p></div><div class="grid steps">
+<div class="step"><div class="n">1</div><h3>Elige tu acceso</h3><p>Selecciona el Esencial o el Completo y finaliza tu compra.</p></div>
+<div class="step"><div class="n">2</div><h3>Recibe las instrucciones</h3><p>Después de la confirmación del pago, recibirás el acceso por correo electrónico (email).</p></div>
+<div class="step"><div class="n">3</div><h3>Descarga el material</h3><p>Guarda los PDF en tu celular, tablet o computadora.</p></div>
+<div class="step"><div class="n">4</div><h3>Busca lo que necesitas revisar</h3><p>Consulta el área y la ficha relacionada con el problema de la bicicleta.</p></div>
+<div class="step"><div class="n">5</div><h3>Consúltalo o imprímelo</h3><p>Revisa el material en pantalla o imprime las fichas que quieras tener a mano.</p></div>
+</div></div></section>
+
+<section id="pricing" class="pricing"><div class="wrap"><div style="text-align:center;margin-bottom:40px"><h2 class="center-title" style="color:#0F172A;font-size:32px">ELIGE CÓMO QUIERES RECIBIR LAS 120 FICHAS</h2><p style="color:#64748B;font-size:14px">Un solo pago. Material en español. Sin suscripciones.</p></div><div class="price-grid">
+<div class="price-card"><div class="eyebrow">ACCESO ESENCIAL</div><ul class="plist" id="essentialList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><strong style="color:#16A34A">US$ 19,90</strong></div><div style="color:#64748b;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><button type="button" class="btn-outline">QUIERO EL ACCESO ESENCIAL</button><div style="text-align:center;color:#DC2626;font-size:12px;font-weight:800;margin-top:12px">El 93% de los compradores elige el Acceso Completo a continuación ↓</div></div>
+<div style="position:relative"><span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);z-index:10;background:#00A3FF;color:#fff;font-weight:900;font-size:11px;letter-spacing:.1em;padding:6px 18px;border-radius:0 0 10px 10px;box-shadow:0 6px 16px rgba(0,0,0,.35);white-space:nowrap">MÁS VENDIDO</span><div class="price-card pro"><div class="eyebrow blue">ACCESO COMPLETO</div><div class="price-thumb complete-img"><img src="completo-transparente.webp" alt="Kit completo: 120 fichas visuales más los 5 bonos" width="894" height="888" loading="lazy" decoding="async" style="aspect-ratio:894/888"></div><ul class="plist" id="completeList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><strong style="color:#4ADE80">US$ 34,90</strong></div><div style="color:#cbd5e1;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><button type="button" class="btn-block">QUIERO EL ACCESO COMPLETO</button></div></div>
+</div></div></section>
+
+<section class="sec-light"><div class="guar-box"><div style="position:relative"><img src="selo-garantia.webp" alt="Sello 7 días garantía" class="seal-img" loading="lazy" decoding="async"></div><div class="guar-txt"><div style="color:#eab308;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px">GARANTÍA</div><h2>TIENES 7 DÍAS PARA REVISAR EL MATERIAL</h2><p>Abre las fichas, mira las imágenes y comprueba si el formato te resulta útil para estudiar o consultar.</p><p>Si consideras que el producto no es para ti, puedes solicitar el reembolso del 100% dentro de los primeros 7 días a través de [CANAL DE REEMBOLSO].</p></div></div></section>
+
+<section class="sec-slate"><div class="wrap" style="max-width:768px"><div style="text-align:center;margin-bottom:32px"><span class="kicker">PREGUNTAS FRECUENTES</span><h2 class="center-title" style="font-size:28px">PREGUNTAS FRECUENTES</h2></div><div id="faq"></div></div></section>
+
+<footer><div class="wrap"><h3>120 FICHAS VISUALES DE MECÁNICA DE BICICLETAS</h3><p class="fd">Material visual en español para aprender, repasar y consultar los puntos de revisión de tu bicicleta.</p><div class="contact"><span>Soporte: [CONTACTO DE SOPORTE]</span></div><div class="footbar"><p>© 2026 120 Fichas Visuales de Mecánica de Bicicletas. Todos los derechos reservados.</p><div class="links"><span>Términos de uso</span><span>Política de privacidad</span><span>Contacto</span></div></div></div></footer>
+
+<script>
+(function(){
+var fichas=[
+{n:"06",f:"ficha-03-cambio-no-sube.webp",t:"El cambio no sube de marcha"},
+{n:"14",f:"ficha-04-freno-sin-potencia.webp",t:"El freno perdió potencia"},
+{n:"25",f:"ficha-05-rueda-descentrada.webp",t:"La rueda está descentrada"},
+{n:"33",f:"ficha-06-sistema-tubeless.webp",t:"Revisión del sistema tubeless"},
+{n:"37",f:"ficha-07-juego-lateral-cubo.webp",t:"El buje tiene juego lateral"},
+{n:"45",f:"ficha-08-nucleo-con-juego.webp",t:"Núcleo con juego"},
+{n:"61",f:"ficha-09-direccion-con-juego.webp",t:"La dirección tiene holgura"},
+{n:"73",f:"ficha-10-compresion-suspension.webp",t:"La horquilla no comprime correctamente"},
+{n:"86",f:"ficha-11-cuadro-desalineado.webp",t:"Cuadro desalineado"},
+{n:"94",f:"ficha-19-soldaduras-cuadro.webp",t:"Inspección de soldaduras"},
+{n:"97",f:"ficha-12-sillin-suelto.webp",t:"Sillín flojo"},
+{n:"104",f:"ficha-13-cambio-duro.webp",t:"Mando de cambio duro"},
+{n:"109",f:"ficha-14-ruido-intermitente.webp",t:"Ruido intermitente al pedalear"},
+{n:"110",f:"ficha-15-ruido-al-frenar.webp",t:"Ruido al frenar"},
+{n:"113",f:"ficha-16-vibracion-marcha.webp",t:"Vibración durante la marcha"},
+{n:"114",f:"ficha-17-inspeccion-antes-rodar.webp",t:"Inspección general antes de rodar"},
+{n:"116",f:"ficha-18-limpieza-transmision.webp",t:"Limpieza de la transmisión"},
+{n:"120",f:"ficha-20-flujo-diagnostico.webp",t:"Secuencia rápida de diagnóstico"}
+];
+function cardHTML(a){
+  return '<div class="card-item"><div class="card-thumb" style="padding:4px"><img src="'+a.f+'" alt="Ficha '+a.n+' · '+a.t+'" loading="lazy" decoding="async"></div><label>Ficha '+a.n+' · '+a.t+'</label></div>';
+}
+function build(id,arr){
+  var el=document.getElementById(id); if(!el) return;
+  var all=arr.concat(arr);
+  el.innerHTML=all.map(cardHTML).join("");
+}
+build("marquee1",fichas.slice(0,9));
+build("marquee2",fichas.slice(9));
+var org=["Imágenes para reconocer componentes.","Síntomas y posibles causas.","Puntos de comprobación organizados.","120 fichas distribuidas en 10 áreas.","Formato digital para consultar o imprimir.","Una referencia para estudiar, repasar y apoyar tus revisiones."];
+var og=document.getElementById("organizedGrid");
+if(og){ og.innerHTML=org.map(function(t){return '<div class="org-item"><span style="color:#00A3FF;font-weight:900">✓</span><span>'+t+'</span></div>';}).join(""); }
+var bonuses=[
+{n:1,img:"bono-1.webp",alt:"Listas de inspección",t:"LISTAS DE INSPECCIÓN",h:"Listas de inspección",d:"Qué comprobar antes y después de un servicio para llevar una revisión más organizada."},
+{n:2,img:"bono-2.webp",alt:"Guía visual de herramientas",t:"GUÍA VISUAL DE HERRAMIENTAS",h:"Guía visual de herramientas",d:"Identifica las herramientas y consulta para qué se utiliza cada una."},
+{n:3,img:"bono-3.webp",alt:"Tabla de mantenimiento preventivo",t:"TABLA DE MANTENIMIENTO PREVENTIVO",h:"Tabla de mantenimiento preventivo",d:"Organiza las revisiones, la limpieza y la lubricación de la bicicleta."},
+{n:4,img:"bono-4.webp",alt:"Guía de síntomas y posibles causas",t:"GUÍA DE SÍNTOMAS Y POSIBLES CAUSAS",h:"Guía de síntomas y posibles causas",d:"Una referencia complementaria para relacionar las fallas con los puntos que conviene revisar."},
+{n:5,img:"bono-5.webp",alt:"Fichas de registro para el taller",t:"FICHAS DE REGISTRO PARA EL TALLER",h:"Fichas de registro para el taller",d:"Anota las inspecciones y los servicios realizados para mantener un historial organizado."}
+];
+function bonusHTML(b){
+  return '<div class="bonus"><div class="bonus-head"><img src="'+b.img+'" alt="'+b.alt+'" loading="lazy" decoding="async"></div><div class="bonus-body"><span class="tag">BONO #'+b.n+'</span><h4>'+b.h+'</h4><p>'+b.d+'</p></div></div>';
+}
+document.getElementById("bonusGrid").innerHTML=bonuses.map(bonusHTML).join("");
+var ess=["120 fichas visuales organizadas en 10 áreas","Imágenes, posibles causas y puntos de revisión","Material digital en español para descargar e imprimir","Consulta desde celular, tablet o computadora"];
+document.getElementById("essentialList").innerHTML=ess.map(function(s){return '<li><span style="color:#22c55e;font-weight:900">✓</span><span>'+s+'</span></li>';}).join("");
+var comp=["Todo lo incluido en el Acceso Esencial","5 bonos de consulta y organización","Material digital en español para descargar e imprimir","Consulta desde celular, tablet o computadora","Garantía de 7 días"];
+document.getElementById("completeList").innerHTML=comp.map(function(s){return '<li><span style="color:#22c55e;font-weight:900">✓</span><span>'+s+'</span></li>';}).join("");
+var faq=[
+["¿Necesito experiencia en mecánica de bicicletas?","Puedes usar las fichas como apoyo si estás empezando. Las imágenes y los puntos de revisión te ayudan a reconocer componentes y entender qué comprobar. Algunas intervenciones requieren experiencia y herramientas específicas."],
+["¿El contenido está en español?","Sí. Las 120 fichas y los bonos están en español."],
+["¿Puedo acceder desde mi celular?","Sí. Puedes descargar los PDF y consultarlos desde tu celular, tablet o computadora con un lector de PDF."],
+["¿Es un curso en video o un libro físico?","Es una colección digital de fichas visuales en PDF. Puedes consultarlas en pantalla o imprimirlas."],
+["¿Sirve para estudiantes?","Sí. Puedes utilizar el material para estudiar componentes, repasar posibles causas de fallas y consultar los puntos de revisión."],
+["¿También sirve para mecánicos que ya trabajan?","Sí, como material de consulta. Las fichas reúnen imágenes, posibles causas y puntos de comprobación organizados por área."],
+["¿Sirve para cualquier bicicleta?","El material aborda las 10 áreas descritas. Las medidas, compatibilidades, ajustes y procedimientos específicos deben verificarse en la documentación del fabricante de tu bicicleta o componente."],
+["¿Cómo recibo mi acceso?","Por correo electrónico (email), después de la confirmación del pago. El tiempo de confirmación depende del medio de pago utilizado."],
+["¿Cuál es la diferencia entre los dos accesos?","El Esencial incluye las 120 fichas. El Completo incluye las mismas 120 fichas y los 5 bonos. Ambos son de pago único y tienen 7 días de garantía."],
+["¿Tengo que pagar una mensualidad?","No. Realizas un solo pago por el acceso elegido."],
+["¿Qué pasa si el material no es para mí?","Puedes solicitar el reembolso dentro de los primeros 7 días a través de [CANAL DE REEMBOLSO Y CONTACTO DE SOPORTE]."]
+];
+var faqEl=document.getElementById("faq");
+faqEl.innerHTML=faq.map(function(f,i){
+  var open=i===0;
+  return '<div class="faq-item"><button type="button" class="faq-btn" data-open="'+open+'"><span>'+f[0]+'</span><span>'+(open?"−":"+ ")+'</span></button><div class="faq-panel" style="'+(open?"max-height:220px":"max-height:0")+'"><p>'+f[1]+'</p></div></div>';
+}).join("");
+faqEl.querySelectorAll(".faq-btn").forEach(function(btn){
+  btn.addEventListener("click",function(){
+    var panel=btn.parentElement.querySelector(".faq-panel");
+    var isOpen=panel.style.maxHeight && panel.style.maxHeight!=="0px";
+    panel.style.maxHeight=isOpen?"0":"220px";
+    btn.lastElementChild.textContent=isOpen?"+":"−";
+  });
+});
+var urg=document.getElementById("urgencyTimer");
+var urgDate=document.getElementById("urgencyDate");
+if(urg){
+  function tick(){
+    var now=new Date();
+    if(urgDate){ urgDate.textContent=String(now.getDate()).padStart(2,"0")+"/"+String(now.getMonth()+1).padStart(2,"0")+"/"+now.getFullYear(); }
+    var target=new Date(now.getFullYear(),now.getMonth(),now.getDate(),23,59,59).getTime();
+    var d=Math.max(0,target-Date.now());
+    var h=Math.floor(d/3600000); var m=Math.floor((d%3600000)/60000); var s=Math.floor((d%60000)/1000);
+    urg.textContent=String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+  }
+  tick(); setInterval(tick,1000);
+}
+})();
+</script>
+</body></html>
