@@ -139,7 +139,7 @@ section{padding:40px 0}
 .step p{font-size:10.5px;line-height:1.5}
 }
 .pricing{background:#fff;color:#0f172a}
-.price-grid{display:grid;gap:32px;max-width:896px;margin:0 auto;padding-top:16px}
+.price-grid{display:grid;gap:32px;max-width:896px;margin:0 auto}
 .price-card{background:#fff;color:#0f172a;border-radius:16px;padding:32px;display:flex;flex-direction:column;margin-top:32px;border:1px solid #e2e8f0;box-shadow:0 12px 32px rgba(15,23,42,.08)}
 .price-card.pro{background:linear-gradient(165deg,#010409 0%,#030a18 50%,#0A1628 100%);color:#fff;border:2px solid #00A3FF;box-shadow:0 25px 50px rgba(0,0,0,.5);position:relative;overflow:hidden}
 .price-card.pro::after{content:"";position:absolute;top:0;left:0;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.13),transparent);transform:translateX(-160%) skewX(-20deg);animation:cardShine 3.5s ease-in-out infinite;pointer-events:none;z-index:1}
@@ -161,13 +161,13 @@ section{padding:40px 0}
 .eyebrow.blue{color:#00A3FF}
 .price-card h3{font-size:18px;font-weight:800;margin-bottom:16px;line-height:1.4}
 .now{display:flex;align-items:baseline;gap:4px;margin-bottom:8px}
-.now strong{font-size:24px;font-weight:900;line-height:1.2}
+.now strong{font-size:30px;font-weight:900;line-height:1.2}
 .now em{font-style:normal;font-size:11px;color:#64748b;font-weight:600}
 .price-card .sub{font-size:11px;color:#64748b;margin-bottom:32px;line-height:1.5}
 .plist{list-style:none;margin-bottom:32px;flex:1;display:flex;flex-direction:column;gap:12px;font-size:13px}
 .plist li{display:flex;gap:8px;align-items:flex-start;line-height:1.4}
-.btn-outline{border:2px solid #e2e8f0;background:#fff;color:#334155;border-radius:6px;padding:16px;font-weight:800;font-size:13px;text-transform:uppercase;width:100%}
-.btn-block{width:100%;text-align:center;padding:16px;border-radius:6px;background:#00A3FF;color:#fff;font-weight:800;font-size:13px;text-transform:uppercase;border:none}
+.btn-outline{display:block;text-align:center;text-decoration:none;cursor:pointer;border:2px solid #e2e8f0;background:#fff;color:#334155;border-radius:6px;padding:16px;font-weight:800;font-size:13px;text-transform:uppercase;width:100%}
+.btn-block{display:block;text-align:center;text-decoration:none;cursor:pointer;width:100%;padding:16px;border-radius:6px;background:#00A3FF;color:#fff;font-weight:800;font-size:13px;text-transform:uppercase;border:none}
 .guar-box{max-width:896px;margin:0 auto;background:#fff;border:1px solid #f1f5f9;border-radius:24px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:32px;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.04)}
 .seal{width:160px;height:160px;border-radius:50%;border:4px solid #facc15;outline:4px dashed rgba(250,204,21,.6);outline-offset:6px;background:radial-gradient(circle at 35% 30%,#1E293B,#0A1628);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:14px;box-shadow:0 15px 35px rgba(0,0,0,.35),inset 0 0 0 6px rgba(250,204,21,.18);position:relative;flex:0 0 auto;text-align:center;line-height:1.2}
 .seal-star{font-size:26px;color:#facc15;line-height:1}
@@ -192,6 +192,13 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 @media(min-width:640px){.ctas{flex-direction:row}.btn{width:auto}.org-grid{grid-template-columns:1fr 1fr}.bonus-grid{grid-template-columns:1fr 1fr}.bonus-grid>*:last-child{grid-column:1/-1;justify-self:center;width:100%;max-width:420px}.todo-sec .org-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.contact{flex-direction:row;align-items:center}.ficha-grid{grid-template-columns:1fr 1fr 1fr}}
 @media(min-width:768px){.hero{padding:64px 0 96px}.hero h1{font-size:44px}.lead{font-size:17px}.price-grid{grid-template-columns:1fr 1fr}.guar-box{flex-direction:row;padding:48px}.guar-txt{text-align:left}.split{grid-template-columns:5fr 7fr;align-items:center;gap:64px}.steps{grid-template-columns:repeat(5,1fr)}.card-item{width:260px}.special-box{padding:48px}.footbar{flex-direction:row;align-items:center}}
 @media(min-width:1024px){.hero h1{font-size:56px}.grid-3{grid-template-columns:1fr 1fr 1fr}.bonus-grid{grid-template-columns:1fr 1fr 1fr 1fr}.bonus-grid>*:last-child{grid-column:2/4;max-width:none}.price-card.pro{transform:translateY(-16px)}.seal{width:192px;height:192px}}
+/* ===== RELATOS (carrossel) ===== */
+.relato-outer{overflow:hidden;position:relative;max-width:896px;margin:0 auto 36px;-webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
+.relato-track{display:flex;gap:16px;width:max-content;animation:relatoMq 30s linear infinite}
+.relato-outer:hover .relato-track{animation-play-state:paused}
+.relato-track img{flex:0 0 auto;width:210px;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;border-radius:14px;border:4px solid #fff;box-shadow:0 10px 26px rgba(15,23,42,.16);background:#f1f5f9}
+@keyframes relatoMq{to{transform:translateX(calc(-50% - 8px))}}
+@media(max-width:640px){.relato-track img{width:170px}}
 </style>
 </head>
 <body>
@@ -199,7 +206,7 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <section class="hero"><div class="hero-inner">
 <h1><span>120 FICHAS VISUALES DE MECÁNICA DE BICICLETAS</span></h1>
 <p class="lead">Una biblioteca visual con imágenes, posibles causas y puntos de revisión para saber qué comprobar primero cuando aparece una falla.</p>
-<img class="mockup-img" src="mockup-transparent.webp" alt="Mockup del producto con fichas reales visibles de mecánica de bicicletas" width="1441" height="1086" fetchpriority="high" decoding="async">
+<img class="mockup-img" src="mockup-transparent-m.webp" alt="Mockup del producto con fichas reales visibles de mecánica de bicicletas" width="1000" height="754" fetchpriority="high" decoding="async">
 <div class="ctas"><button type="button" class="btn btn-blue">QUIERO ACCEDER A LAS 120 FICHAS</button></div>
 <div class="checks"><div><span style="color:#00A3FF;font-weight:900">✓</span> Material digital para descargar e imprimir</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Acceso tras la confirmación del pago</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Pago único, sin mensualidades</div></div>
 </div></section>
@@ -222,7 +229,7 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <div class="pub-card"><div class="pub-num">06</div><h3>Encargados de talleres</h3><p>Que quieren sumar material de consulta a sus revisiones y registros de servicio.</p></div>
 </div></div></section>
 
-<section class="sec-light todo-sec"><div class="split"><div class="split-img todo-img"><img src="todo.webp" alt="Mira cómo te ayuda esta ficha - Ficha 06 El cambio no sube de marcha" width="1100" height="825" loading="lazy" decoding="async" style="aspect-ratio:1100/825"></div><div><span class="pill">TODO ORGANIZADO</span><h2>LA INFORMACIÓN QUE NECESITAS CONSULTAR, REUNIDA EN UNA FICHA</h2><p class="desc" style="font-weight:800;color:#0F172A">¿El cambio falla, la rueda roza o apareció un ruido?</p><p class="desc">Busca la ficha relacionada con el síntoma, identifica la pieza y consulta las posibles causas y los puntos de revisión.</p><div class="org-grid" id="organizedGrid"></div></div></div></section>
+<section class="sec-light todo-sec"><div class="split"><div class="split-img todo-img"><img src="todo-m.webp" alt="Mira cómo te ayuda esta ficha - Ficha 06 El cambio no sube de marcha" width="800" height="600" loading="lazy" decoding="async" style="aspect-ratio:1100/825"></div><div><span class="pill">TODO ORGANIZADO</span><h2>LA INFORMACIÓN QUE NECESITAS CONSULTAR, REUNIDA EN UNA FICHA</h2><p class="desc" style="font-weight:800;color:#0F172A">¿El cambio falla, la rueda roza o apareció un ruido?</p><p class="desc">Busca la ficha relacionada con el síntoma, identifica la pieza y consulta las posibles causas y los puntos de revisión.</p><div class="org-grid" id="organizedGrid"></div></div></div></section>
 
 <section class="sec-slate"><div class="wrap" style="max-width:1152px"><div style="text-align:center;margin-bottom:40px"><span class="kicker">EXTRAS</span><h2 class="center-title">Y ADEMÁS, CON EL ACCESO COMPLETO RECIBIRÁS ESTOS 5 BONOS</h2></div><div class="grid bonus-grid" id="bonusGrid"></div></div></section>
 
@@ -234,12 +241,25 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <div class="step"><div class="n">5</div><h3>Consúltalo o imprímelo</h3><p>Revisa el material en pantalla o imprime las fichas que quieras tener a mano.</p></div>
 </div></div></section>
 
-<section id="pricing" class="pricing"><div class="wrap"><div style="text-align:center;margin-bottom:40px"><h2 class="center-title" style="color:#0F172A;font-size:32px">ELIGE CÓMO QUIERES RECIBIR LAS 120 FICHAS</h2><p style="color:#64748B;font-size:14px">Un solo pago. Material en español. Sin suscripciones.</p></div><div class="price-grid">
-<div class="price-card"><div class="eyebrow">ACCESO ESENCIAL</div><ul class="plist" id="essentialList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><strong style="color:#16A34A">US$ 19,90</strong></div><div style="color:#64748b;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><button type="button" class="btn-outline">QUIERO EL ACCESO ESENCIAL</button><div style="text-align:center;color:#DC2626;font-size:12px;font-weight:800;margin-top:12px">El 93% de los compradores elige el Acceso Completo a continuación ↓</div></div>
-<div style="position:relative"><span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);z-index:10;background:#00A3FF;color:#fff;font-weight:900;font-size:11px;letter-spacing:.1em;padding:6px 18px;border-radius:0 0 10px 10px;box-shadow:0 6px 16px rgba(0,0,0,.35);white-space:nowrap">MÁS VENDIDO</span><div class="price-card pro"><div class="eyebrow blue">ACCESO COMPLETO</div><div class="price-thumb complete-img"><img src="completo-transparente.webp" alt="Kit completo: 120 fichas visuales más los 5 bonos" width="894" height="888" loading="lazy" decoding="async" style="aspect-ratio:894/888"></div><ul class="plist" id="completeList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><strong style="color:#4ADE80">US$ 34,90</strong></div><div style="color:#cbd5e1;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><button type="button" class="btn-block">QUIERO EL ACCESO COMPLETO</button></div></div>
+<section id="pricing" class="pricing"><div class="wrap">
+<div style="text-align:center;margin-bottom:24px"><span class="kicker">TESTIMONIOS</span><h2 class="center-title" style="color:#1E40AF;font-size:26px;margin-bottom:0">ASÍ SE USAN LAS FICHAS EN EL TALLER</h2></div>
+<div class="relato-outer"><div class="relato-track">
+<img src="relato-1.webp" alt="Mecánico consulta la ficha de diagnóstico de la bicicleta" width="560" height="700" loading="lazy" decoding="async">
+<img src="relato-2.webp" alt="Mecánico consulta la ficha de la rueda descentrada" width="560" height="560" loading="lazy" decoding="async">
+<img src="relato-3.webp" alt="Mecánico consulta la ficha del cambio en el celular" width="560" height="700" loading="lazy" decoding="async">
+<img src="relato-4.webp" alt="Mecánico consulta la ficha del garfo de suspensión" width="560" height="560" loading="lazy" decoding="async">
+<img src="relato-1.webp" alt="" aria-hidden="true" width="560" height="700" loading="lazy" decoding="async">
+<img src="relato-2.webp" alt="" aria-hidden="true" width="560" height="560" loading="lazy" decoding="async">
+<img src="relato-3.webp" alt="" aria-hidden="true" width="560" height="700" loading="lazy" decoding="async">
+<img src="relato-4.webp" alt="" aria-hidden="true" width="560" height="560" loading="lazy" decoding="async">
+</div></div>
+<div style="text-align:center;margin-bottom:16px"><h2 class="center-title" style="color:#0F172A;font-size:24px">ELIGE CÓMO QUIERES RECIBIR LAS 120 FICHAS</h2><p style="color:#64748B;font-size:14px">Un solo pago. Material en español. Sin suscripciones.</p></div>
+<div class="price-grid">
+<div class="price-card" id="esencial"><div class="eyebrow">ACCESO ESENCIAL</div><ul class="plist" id="essentialList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><del style="font-size:11px;color:#94A3B8;font-weight:700;text-decoration-thickness:1.5px">US$ 12,90</del><strong style="color:#00A3FF">US$ 6,90</strong></div><div style="color:#64748b;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><a class="btn-outline" href="https://pay.hotmart.com/O107847107R?off=fpayv43k&amp;checkoutMode=10" target="_blank" rel="noopener">QUIERO EL ACCESO ESENCIAL</a><div style="text-align:center;color:#DC2626;font-size:12px;font-weight:800;margin-top:12px">El 93% de los compradores elige el Acceso Completo a continuación ↓</div></div>
+<div class="price-card pro"><span style="position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:10;background:#00A3FF;color:#fff;font-weight:900;font-size:11px;letter-spacing:.1em;padding:6px 18px;border-radius:0 0 10px 10px;box-shadow:0 6px 16px rgba(0,0,0,.35);white-space:nowrap">MÁS VENDIDO</span><div class="eyebrow blue">ACCESO COMPLETO</div><div class="price-thumb complete-img"><img src="completo-transparente-m.webp" alt="Kit completo: 120 fichas visuales más los 5 bonos" width="620" height="616" loading="lazy" decoding="async" style="aspect-ratio:894/888"></div><ul class="plist" id="completeList"></ul><div style="text-align:center;margin-bottom:16px"><div class="now" style="justify-content:center"><del style="font-size:11px;color:#94A3B8;font-weight:700;text-decoration-thickness:1.5px">US$ 19,90</del><strong style="color:#00A3FF">US$ 9,90</strong></div><div style="color:#cbd5e1;font-size:12px;font-weight:700;margin-bottom:6px">Pago único · Acceso de por vida</div><span style="display:inline-block;background:#FFD60A;color:#0F172A;font-weight:800;font-size:11px;padding:4px 12px;border-radius:999px">🌎 Paga en tu moneda local</span></div><a class="btn-block" href="https://pay.hotmart.com/O107847107R?off=i7eaq1ya&amp;checkoutMode=10" target="_blank" rel="noopener">QUIERO EL ACCESO COMPLETO</a></div>
 </div></div></section>
 
-<section class="sec-light"><div class="guar-box"><div style="position:relative"><img src="selo-garantia.webp" alt="Sello 7 días garantía" class="seal-img" loading="lazy" decoding="async"></div><div class="guar-txt"><div style="color:#eab308;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px">GARANTÍA</div><h2>TIENES 7 DÍAS PARA REVISAR EL MATERIAL</h2><p>Abre las fichas, mira las imágenes y comprueba si el formato te resulta útil para estudiar o consultar.</p><p>Si consideras que el producto no es para ti, puedes solicitar el reembolso del 100% dentro de los primeros 7 días a través de [CANAL DE REEMBOLSO].</p></div></div></section>
+<section class="sec-light"><div class="guar-box"><div style="position:relative"><img src="selo-garantia-m.webp" alt="Sello 7 días garantía" class="seal-img" loading="lazy" decoding="async"></div><div class="guar-txt"><div style="color:#eab308;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px">GARANTÍA</div><h2>TIENES 7 DÍAS PARA REVISAR EL MATERIAL</h2><p>Abre las fichas, mira las imágenes y comprueba si el formato te resulta útil para estudiar o consultar.</p><p>Si consideras que el producto no es para ti, puedes solicitar el reembolso del 100% dentro de los primeros 7 días a través de [CANAL DE REEMBOLSO].</p></div></div></section>
 
 <section class="sec-slate"><div class="wrap" style="max-width:768px"><div style="text-align:center;margin-bottom:32px"><span class="kicker">PREGUNTAS FRECUENTES</span><h2 class="center-title" style="font-size:28px">PREGUNTAS FRECUENTES</h2></div><div id="faq"></div></div></section>
 
@@ -248,24 +268,24 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <script>
 (function(){
 var fichas=[
-{n:"06",f:"ficha-03-cambio-no-sube.webp",t:"El cambio no sube de marcha"},
-{n:"14",f:"ficha-04-freno-sin-potencia.webp",t:"El freno perdió potencia"},
-{n:"25",f:"ficha-05-rueda-descentrada.webp",t:"La rueda está descentrada"},
-{n:"33",f:"ficha-06-sistema-tubeless.webp",t:"Revisión del sistema tubeless"},
-{n:"37",f:"ficha-07-juego-lateral-cubo.webp",t:"El buje tiene juego lateral"},
-{n:"45",f:"ficha-08-nucleo-con-juego.webp",t:"Núcleo con juego"},
-{n:"61",f:"ficha-09-direccion-con-juego.webp",t:"La dirección tiene holgura"},
-{n:"73",f:"ficha-10-compresion-suspension.webp",t:"La horquilla no comprime correctamente"},
-{n:"86",f:"ficha-11-cuadro-desalineado.webp",t:"Cuadro desalineado"},
-{n:"94",f:"ficha-19-soldaduras-cuadro.webp",t:"Inspección de soldaduras"},
-{n:"97",f:"ficha-12-sillin-suelto.webp",t:"Sillín flojo"},
-{n:"104",f:"ficha-13-cambio-duro.webp",t:"Mando de cambio duro"},
-{n:"109",f:"ficha-14-ruido-intermitente.webp",t:"Ruido intermitente al pedalear"},
-{n:"110",f:"ficha-15-ruido-al-frenar.webp",t:"Ruido al frenar"},
-{n:"113",f:"ficha-16-vibracion-marcha.webp",t:"Vibración durante la marcha"},
-{n:"114",f:"ficha-17-inspeccion-antes-rodar.webp",t:"Inspección general antes de rodar"},
-{n:"116",f:"ficha-18-limpieza-transmision.webp",t:"Limpieza de la transmisión"},
-{n:"120",f:"ficha-20-flujo-diagnostico.webp",t:"Secuencia rápida de diagnóstico"}
+{n:"06",f:"ficha-03-cambio-no-sube-m.webp",t:"El cambio no sube de marcha"},
+{n:"14",f:"ficha-04-freno-sin-potencia-m.webp",t:"El freno perdió potencia"},
+{n:"25",f:"ficha-05-rueda-descentrada-m.webp",t:"La rueda está descentrada"},
+{n:"33",f:"ficha-06-sistema-tubeless-m.webp",t:"Revisión del sistema tubeless"},
+{n:"37",f:"ficha-07-juego-lateral-cubo-m.webp",t:"El buje tiene juego lateral"},
+{n:"45",f:"ficha-08-nucleo-con-juego-m.webp",t:"Núcleo con juego"},
+{n:"61",f:"ficha-09-direccion-con-juego-m.webp",t:"La dirección tiene holgura"},
+{n:"73",f:"ficha-10-compresion-suspension-m.webp",t:"La horquilla no comprime correctamente"},
+{n:"86",f:"ficha-11-cuadro-desalineado-m.webp",t:"Cuadro desalineado"},
+{n:"94",f:"ficha-19-soldaduras-cuadro-m.webp",t:"Inspección de soldaduras"},
+{n:"97",f:"ficha-12-sillin-suelto-m.webp",t:"Sillín flojo"},
+{n:"104",f:"ficha-13-cambio-duro-m.webp",t:"Mando de cambio duro"},
+{n:"109",f:"ficha-14-ruido-intermitente-m.webp",t:"Ruido intermitente al pedalear"},
+{n:"110",f:"ficha-15-ruido-al-frenar-m.webp",t:"Ruido al frenar"},
+{n:"113",f:"ficha-16-vibracion-marcha-m.webp",t:"Vibración durante la marcha"},
+{n:"114",f:"ficha-17-inspeccion-antes-rodar-m.webp",t:"Inspección general antes de rodar"},
+{n:"116",f:"ficha-18-limpieza-transmision-m.webp",t:"Limpieza de la transmisión"},
+{n:"120",f:"ficha-20-flujo-diagnostico-m.webp",t:"Secuencia rápida de diagnóstico"}
 ];
 function cardHTML(a){
   return '<div class="card-item"><div class="card-thumb" style="padding:4px"><img src="'+a.f+'" alt="Ficha '+a.n+' · '+a.t+'" loading="lazy" decoding="async"></div><label>Ficha '+a.n+' · '+a.t+'</label></div>';
@@ -281,11 +301,11 @@ var org=["Imágenes para reconocer componentes.","Síntomas y posibles causas.",
 var og=document.getElementById("organizedGrid");
 if(og){ og.innerHTML=org.map(function(t){return '<div class="org-item"><span style="color:#00A3FF;font-weight:900">✓</span><span>'+t+'</span></div>';}).join(""); }
 var bonuses=[
-{n:1,img:"bono-1.webp",alt:"Listas de inspección",t:"LISTAS DE INSPECCIÓN",h:"Listas de inspección",d:"Qué comprobar antes y después de un servicio para llevar una revisión más organizada."},
-{n:2,img:"bono-2.webp",alt:"Guía visual de herramientas",t:"GUÍA VISUAL DE HERRAMIENTAS",h:"Guía visual de herramientas",d:"Identifica las herramientas y consulta para qué se utiliza cada una."},
-{n:3,img:"bono-3.webp",alt:"Tabla de mantenimiento preventivo",t:"TABLA DE MANTENIMIENTO PREVENTIVO",h:"Tabla de mantenimiento preventivo",d:"Organiza las revisiones, la limpieza y la lubricación de la bicicleta."},
-{n:4,img:"bono-4.webp",alt:"Guía de síntomas y posibles causas",t:"GUÍA DE SÍNTOMAS Y POSIBLES CAUSAS",h:"Guía de síntomas y posibles causas",d:"Una referencia complementaria para relacionar las fallas con los puntos que conviene revisar."},
-{n:5,img:"bono-5.webp",alt:"Fichas de registro para el taller",t:"FICHAS DE REGISTRO PARA EL TALLER",h:"Fichas de registro para el taller",d:"Anota las inspecciones y los servicios realizados para mantener un historial organizado."}
+{n:1,img:"bono-1-m.webp",alt:"Listas de inspección",t:"LISTAS DE INSPECCIÓN",h:"Listas de inspección",d:"Qué comprobar antes y después de un servicio para llevar una revisión más organizada."},
+{n:2,img:"bono-2-m.webp",alt:"Guía visual de herramientas",t:"GUÍA VISUAL DE HERRAMIENTAS",h:"Guía visual de herramientas",d:"Identifica las herramientas y consulta para qué se utiliza cada una."},
+{n:3,img:"bono-3-m.webp",alt:"Tabla de mantenimiento preventivo",t:"TABLA DE MANTENIMIENTO PREVENTIVO",h:"Tabla de mantenimiento preventivo",d:"Organiza las revisiones, la limpieza y la lubricación de la bicicleta."},
+{n:4,img:"bono-4-m.webp",alt:"Guía de síntomas y posibles causas",t:"GUÍA DE SÍNTOMAS Y POSIBLES CAUSAS",h:"Guía de síntomas y posibles causas",d:"Una referencia complementaria para relacionar las fallas con los puntos que conviene revisar."},
+{n:5,img:"bono-5-m.webp",alt:"Fichas de registro para el taller",t:"FICHAS DE REGISTRO PARA EL TALLER",h:"Fichas de registro para el taller",d:"Anota las inspecciones y los servicios realizados para mantener un historial organizado."}
 ];
 function bonusHTML(b){
   return '<div class="bonus"><div class="bonus-head"><img src="'+b.img+'" alt="'+b.alt+'" loading="lazy" decoding="async"></div><div class="bonus-body"><span class="tag">BONO #'+b.n+'</span><h4>'+b.h+'</h4><p>'+b.d+'</p></div></div>';
@@ -334,6 +354,14 @@ if(urg){
   }
   tick(); setInterval(tick,1000);
 }
+/* Todos os CTAs levam ao card ACESSO ESENCIAL */
+document.addEventListener("click",function(e){
+  var t=e.target;
+  var b=t&&t.closest?t.closest(".btn-blue"):null;
+  if(!b) return;
+  var dest=document.getElementById("esencial");
+  if(dest) dest.scrollIntoView({behavior:"smooth",block:"center"});
+});
 })();
 </script>
 </body></html>
