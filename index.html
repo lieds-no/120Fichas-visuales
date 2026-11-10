@@ -12,17 +12,17 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer}
 img{max-width:100%;height:auto}
 .wrap{max-width:1024px;margin:0 auto;padding:0 16px}
-.urgency{background:#050B14;color:rgba(255,255,255,.92);font-size:14px;padding:10px 8px;text-align:center;text-transform:uppercase;letter-spacing:.06em;font-weight:700;line-height:1.4;border-bottom:1px solid rgba(0,163,255,.25);display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:8px;white-space:nowrap;overflow:hidden}
-.urgency .timer{color:#ef4444;font-weight:900;font-variant-numeric:tabular-nums;margin-left:0;white-space:nowrap;flex:0 0 auto;min-width:70px;text-align:center;display:inline-block}
-@media(max-width:640px){.urgency{font-size:11px;padding:8px 6px;letter-spacing:.02em;gap:6px}}
+.urgency{background:#050B14;color:rgba(255,255,255,.92);font-size:16px;padding:12px 8px;text-align:center;text-transform:uppercase;letter-spacing:.06em;font-weight:700;line-height:1.4;border-bottom:1px solid rgba(0,163,255,.25);display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:8px;white-space:nowrap;overflow:hidden}
+.urgency .timer{color:#ef4444;font-weight:900;font-size:19px;font-variant-numeric:tabular-nums;margin-left:0;white-space:nowrap;flex:0 0 auto;min-width:86px;text-align:center;display:inline-block}
+@media(max-width:640px){.urgency{font-size:13px;padding:9px 6px;letter-spacing:.02em;gap:6px}.urgency .timer{font-size:15px;min-width:76px}}
 .hero{background:radial-gradient(ellipse 70% 55% at 50% -5%,rgba(0,163,255,.18),transparent 70%),radial-gradient(ellipse 45% 35% at 85% 105%,rgba(2,32,71,.55),transparent 70%),radial-gradient(ellipse 40% 30% at 8% 90%,rgba(0,163,255,.06),transparent 70%),linear-gradient(180deg,#020617 0%,#030a18 55%,#010409 100%);color:#fff;position:relative;overflow:hidden;padding:40px 0 64px}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,163,255,.03) 0%,transparent 25%,transparent 70%,rgba(1,4,9,.8) 100%);pointer-events:none;z-index:0}
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(0,163,255,.08) 1px,transparent 1px),linear-gradient(to bottom,rgba(0,163,255,.08) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);pointer-events:none;z-index:0}
 .hero-inner{position:relative;z-index:1;max-width:1024px;margin:0 auto;padding:0 16px;display:flex;flex-direction:column;align-items:center;text-align:center}
 .badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:30px;color:#00A3FF;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(0,163,255,.3);padding:6px 16px;border-radius:999px;background:rgba(0,163,255,.05)}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:#facc15;flex:0 0 auto}
-.hero h1{font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#E2E8F0;max-width:900px;margin-bottom:24px;text-shadow:0 1px 0 rgba(2,6,23,.9),0 2px 0 rgba(2,6,23,.75),0 3px 0 rgba(2,6,23,.55),0 4px 0 rgba(2,6,23,.35),0 8px 18px rgba(0,0,0,.5);transform:perspective(600px) rotateX(3deg)}
-.hero h1 span{color:#0284C7;text-shadow:0 1px 0 #082f49,0 2px 0 #075985,0 3px 0 #0c4a6e,0 4px 0 #082f49,0 8px 18px rgba(0,0,0,.6)}
+.hero h1{font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#E2E8F0;max-width:900px;margin-bottom:24px;text-shadow:0 4px 14px rgba(0,0,0,.45)}
+.hero h1 span{color:#0284C7;text-shadow:0 4px 14px rgba(0,0,0,.45)}
 .lead{font-size:16px;line-height:1.65;color:#F1F5F9;max-width:760px;margin-bottom:16px;font-weight:600;text-shadow:0 1px 8px rgba(2,6,23,.8)}
 .lead2{font-size:13px;line-height:1.6;color:#94a3b8;margin-bottom:40px}
 .mockup{width:100%;max-width:768px;min-height:260px;border-radius:16px;background:linear-gradient(135deg,#0A1628 0%,#12345E 55%,#0A1628 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:32px;margin-bottom:28px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(0,163,255,.25)}
@@ -32,7 +32,7 @@ img{max-width:100%;height:auto}
 .mockup-img{width:100%;max-width:768px;height:auto;aspect-ratio:1441/1086;object-fit:contain;border-radius:0;display:block;margin-bottom:28px;filter:drop-shadow(0 25px 35px rgba(0,0,0,.45));background:transparent;animation:mockPulse 3s ease-in-out infinite}
 @keyframes mockPulse{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.02) translateY(-3px)}}
 .ctas{display:flex;flex-direction:column;gap:16px;width:100%;justify-content:center;margin-bottom:30px}
-.btn{display:block;width:100%;text-align:center;padding:16px 32px;border-radius:6px;font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;border:none;transition:background .2s}
+.btn{display:block;width:100%;text-align:center;padding:16px 32px;border-radius:6px;font-weight:900;font-size:15px;letter-spacing:.05em;text-transform:uppercase;border:none;transition:background .2s}
 .btn-blue{background:#00A3FF;color:#fff;box-shadow:0 0 15px rgba(0,163,255,.3)}
 .btn-blue:hover{background:#3b82f6}
 .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.2)}
@@ -216,7 +216,7 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <div style="text-align:center;margin-bottom:40px"><span class="kicker">CONTENIDO</span><h2 class="center-title">TODO LO QUE TENDRÁS DENTRO DE LAS 120 FICHAS</h2><p class="center-sub">Una biblioteca de consulta para reconocer componentes, revisar posibles causas y entender por dónde empezar cuando algo falla.</p><p class="center-sub" style="margin-top:12px;font-weight:800;color:#0f172a">10 áreas con 12 fichas en cada una.</p></div>
 <div class="marquee-outer"><div class="marquee" id="marquee1"></div></div>
 <div class="marquee-outer" style="margin-top:8px"><div class="marquee rev" id="marquee2"></div></div>
-<p style="text-align:center;color:#64748b;font-size:12px;margin-top:8px">Fichas reales en formato WebP — ejemplos de las 120 fichas.</p>
+<div class="ctas" style="margin-top:8px"><button type="button" class="btn btn-blue">QUIERO ACCEDER A LAS 120 FICHAS</button></div>
 </div></section>
 
 <section class="sec-white publico-sec"><div class="wrap">
@@ -240,7 +240,9 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <div class="step"><div class="n">3</div><h3>Descarga el material</h3><p>Guarda los PDF en tu celular, tablet o computadora.</p></div>
 <div class="step"><div class="n">4</div><h3>Busca lo que necesitas revisar</h3><p>Consulta el área y la ficha relacionada con el problema de la bicicleta.</p></div>
 <div class="step"><div class="n">5</div><h3>Consúltalo o imprímelo</h3><p>Revisa el material en pantalla o imprime las fichas que quieras tener a mano.</p></div>
-</div></div></section>
+</div>
+<div class="ctas"><button type="button" class="btn btn-blue">QUIERO EL ACCESO ESENCIAL</button></div>
+</div></section>
 
 <section id="pricing" class="pricing"><div class="wrap">
 <div style="text-align:center;margin-bottom:24px"><span class="kicker">TESTIMONIOS</span><h2 class="center-title" style="color:#1E40AF;font-size:26px;margin-bottom:0">ASÍ SE USAN LAS FICHAS EN EL TALLER</h2></div>
@@ -312,7 +314,7 @@ function bonusHTML(b){
   return '<div class="bonus"><div class="bonus-head"><img src="'+b.img+'" alt="'+b.alt+'" loading="lazy" decoding="async"></div><div class="bonus-body"><span class="tag">BONO #'+b.n+'</span><h4>'+b.h+'</h4><p>'+b.d+'</p></div></div>';
 }
 document.getElementById("bonusGrid").innerHTML=bonuses.map(bonusHTML).join("");
-var ess=["120 fichas visuales organizadas en 10 áreas","Imágenes, posibles causas y puntos de revisión","Material digital en español para descargar e imprimir","Consulta desde celular, tablet o computadora"];
+var ess=["120 fichas visuales organizadas en 10 áreas","Imágenes, posibles causas y puntos de revisión","Material digital en español para descargar e imprimir","Consulta desde celular, tablet o computadora","Garantía de 7 días"];
 document.getElementById("essentialList").innerHTML=ess.map(function(s){return '<li><span style="color:#22c55e;font-weight:900">✓</span><span>'+s+'</span></li>';}).join("");
 var comp=["Todo lo incluido en el Acceso Esencial","5 bonos de consulta y organización","Material digital en español para descargar e imprimir","Consulta desde celular, tablet o computadora","Garantía de 7 días"];
 document.getElementById("completeList").innerHTML=comp.map(function(s){return '<li><span style="color:#22c55e;font-weight:900">✓</span><span>'+s+'</span></li>';}).join("");
