@@ -17,12 +17,11 @@ img{max-width:100%;height:auto}
 @media(max-width:640px){.urgency{font-size:13px;padding:9px 6px;letter-spacing:.02em;gap:6px}.urgency .timer{font-size:15px;min-width:76px}}
 .hero{background:radial-gradient(ellipse 70% 55% at 50% -5%,rgba(0,163,255,.18),transparent 70%),radial-gradient(ellipse 45% 35% at 85% 105%,rgba(2,32,71,.55),transparent 70%),radial-gradient(ellipse 40% 30% at 8% 90%,rgba(0,163,255,.06),transparent 70%),linear-gradient(180deg,#020617 0%,#030a18 55%,#010409 100%);color:#fff;position:relative;overflow:hidden;padding:40px 0 64px}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,163,255,.03) 0%,transparent 25%,transparent 70%,rgba(1,4,9,.8) 100%);pointer-events:none;z-index:0}
-.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(0,163,255,.08) 1px,transparent 1px),linear-gradient(to bottom,rgba(0,163,255,.08) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 80% 50% at 50% 50%,#000 40%,transparent 100%);pointer-events:none;z-index:0}
 .hero-inner{position:relative;z-index:1;max-width:1024px;margin:0 auto;padding:0 16px;display:flex;flex-direction:column;align-items:center;text-align:center}
 .badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:30px;color:#00A3FF;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;border:1px solid rgba(0,163,255,.3);padding:6px 16px;border-radius:999px;background:rgba(0,163,255,.05)}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:#facc15;flex:0 0 auto}
-.hero h1{font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#E2E8F0;max-width:900px;margin-bottom:24px;text-shadow:0 4px 14px rgba(0,0,0,.45)}
-.hero h1 span{color:#0284C7;text-shadow:0 4px 14px rgba(0,0,0,.45)}
+.hero h1{font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.02em;color:#fff;max-width:900px;margin-bottom:24px;text-shadow:0 4px 14px rgba(0,0,0,.45)}
+.hero h1 span{color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.45)}
 .lead{font-size:16px;line-height:1.65;color:#F1F5F9;max-width:760px;margin-bottom:16px;font-weight:600;text-shadow:0 1px 8px rgba(2,6,23,.8)}
 .lead2{font-size:13px;line-height:1.6;color:#94a3b8;margin-bottom:40px}
 .mockup{width:100%;max-width:768px;min-height:260px;border-radius:16px;background:linear-gradient(135deg,#0A1628 0%,#12345E 55%,#0A1628 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:32px;margin-bottom:28px;box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid rgba(0,163,255,.25)}
@@ -79,6 +78,7 @@ section{padding:40px 0}
 @media(max-width:640px){
 .todo-sec{padding:28px 0 !important}
 .todo-sec .split{gap:20px}
+.todo-sec .split>:only-child{grid-column:1/-1;max-width:920px;margin:0 auto}
 .todo-sec .split-img{min-height:150px;padding:20px}
 .todo-sec .split-img.todo-img{min-height:auto;padding:0}
 .todo-sec .split-img strong{font-size:20px}
@@ -205,12 +205,14 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <body>
 <div class="urgency"><span>La oferta termina hoy <span id="urgencyDate">09/11/2026</span></span><span class="timer" id="urgencyTimer">--:--:--</span></div>
 <section class="hero"><div class="hero-inner">
-<h1><span>120 FICHAS VISUALES DE MECÁNICA DE BICICLETAS</span></h1>
-<p class="lead">Una biblioteca visual con imágenes, posibles causas y puntos de revisión para saber qué comprobar primero cuando aparece una falla.</p>
+<h1><span>120 FICHAS VISUALES DE MECÁNICA DE BICICLETAS<br>CONSULTA EL SÍNTOMA Y DESCUBRE QUÉ REVISAR</span></h1>
+<p class="lead">Busca el síntoma, consulta las posibles causas y descubre qué revisar primero en tu bicicleta, antes de desmontar o cambiar piezas.</p>
 <img class="mockup-img" src="mockup-transparent-m.webp" alt="Mockup del producto con fichas reales visibles de mecánica de bicicletas" width="1000" height="754" fetchpriority="high" decoding="async">
 <div class="ctas"><button type="button" class="btn btn-blue">QUIERO ACCEDER A LAS 120 FICHAS</button></div>
-<div class="checks"><div><span style="color:#00A3FF;font-weight:900">✓</span> Material digital para descargar e imprimir</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Acceso tras la confirmación del pago</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Pago único, sin mensualidades</div></div>
+<div class="checks"><div><span style="color:#00A3FF;font-weight:900">✓</span> Material digital para descargar</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Acceso tras la confirmación del pago</div><div><span style="color:#00A3FF;font-weight:900">✓</span> Pago único, sin mensualidades</div></div>
 </div></section>
+
+<section class="sec-light" style="padding:28px 16px 0"><div style="max-width:768px;margin:0 auto"><img src="todo-m.webp" alt="Mira cómo te ayuda esta ficha - Ficha 06 El cambio no sube de marcha" width="800" height="600" loading="lazy" decoding="async" style="width:100%;height:auto;display:block;border-radius:16px;aspect-ratio:1100/825"></div></section>
 
 <section id="contenido" class="sec-light"><div class="wrap" style="max-width:1152px">
 <div style="text-align:center;margin-bottom:40px"><span class="kicker">CONTENIDO</span><h2 class="center-title">TODO LO QUE TENDRÁS DENTRO DE LAS 120 FICHAS</h2><p class="center-sub">Una biblioteca de consulta para reconocer componentes, revisar posibles causas y entender por dónde empezar cuando algo falla.</p><p class="center-sub" style="margin-top:12px;font-weight:800;color:#0f172a">10 áreas con 12 fichas en cada una.</p></div>
@@ -226,11 +228,9 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 <div class="pub-card"><div class="pub-num">02</div><h3>Estudiantes de mecánica</h3><p>Que buscan una forma visual de aprender y repasar componentes y fallas.</p></div>
 <div class="pub-card"><div class="pub-num">03</div><h3>Quienes están empezando</h3><p>Que necesitan orientación para saber qué revisar primero.</p></div>
 <div class="pub-card"><div class="pub-num">04</div><h3>Ciclistas</h3><p>Que quieren entender mejor los ruidos, las holguras y los problemas de su bicicleta.</p></div>
-<div class="pub-card"><div class="pub-num">05</div><h3>Aficionados al mantenimiento</h3><p>Que buscan organizar sus revisiones y consultar posibles causas.</p></div>
-<div class="pub-card"><div class="pub-num">06</div><h3>Encargados de talleres</h3><p>Que quieren sumar material de consulta a sus revisiones y registros de servicio.</p></div>
 </div></div></section>
 
-<section class="sec-light todo-sec"><div class="split"><div class="split-img todo-img"><img src="todo-m.webp" alt="Mira cómo te ayuda esta ficha - Ficha 06 El cambio no sube de marcha" width="800" height="600" loading="lazy" decoding="async" style="aspect-ratio:1100/825"></div><div><span class="pill">TODO ORGANIZADO</span><h2>LA INFORMACIÓN QUE NECESITAS CONSULTAR, REUNIDA EN UNA FICHA</h2><p class="desc" style="font-weight:800;color:#0F172A">¿El cambio falla, la rueda roza o apareció un ruido?</p><p class="desc">Busca la ficha relacionada con el síntoma, identifica la pieza y consulta las posibles causas y los puntos de revisión.</p><div class="org-grid" id="organizedGrid"></div></div></div></section>
+<section class="sec-light todo-sec"><div class="split"><div><span class="pill">TODO ORGANIZADO</span><h2>LA INFORMACIÓN QUE NECESITAS CONSULTAR, REUNIDA EN UNA FICHA</h2><p class="desc" style="font-weight:800;color:#0F172A">¿El cambio falla, la rueda roza o apareció un ruido?</p><p class="desc">Busca la ficha relacionada con el síntoma, identifica la pieza y consulta las posibles causas y los puntos de revisión.</p><div class="org-grid" id="organizedGrid"></div></div></div></section>
 
 <section class="sec-slate"><div class="wrap" style="max-width:1152px"><div style="text-align:center;margin-bottom:40px"><span class="kicker">EXTRAS</span><h2 class="center-title">Y ADEMÁS, CON EL ACCESO COMPLETO RECIBIRÁS ESTOS 5 BONOS</h2></div><div class="grid bonus-grid" id="bonusGrid"></div></div></section>
 
@@ -291,7 +291,7 @@ var fichas=[
 {n:"120",f:"ficha-20-flujo-diagnostico-m.webp",t:"Secuencia rápida de diagnóstico"}
 ];
 function cardHTML(a){
-  return '<div class="card-item"><div class="card-thumb" style="padding:4px"><img src="'+a.f+'" alt="Ficha '+a.n+' · '+a.t+'" loading="lazy" decoding="async"></div><label>Ficha '+a.n+' · '+a.t+'</label></div>';
+  return '<div class="card-item"><div class="card-thumb" style="padding:4px"><img src="'+a.f+'" alt="Ficha '+a.n+' · '+a.t+'" loading="lazy" decoding="async"></div></div>';
 }
 function build(id,arr){
   var el=document.getElementById(id); if(!el) return;
