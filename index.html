@@ -212,7 +212,7 @@ footer .fd{font-size:13px;color:#475569;max-width:640px;margin:0 auto 32px;line-
 /* ===== BORDA COM BRILHO PASSANDO (só na borda) ===== */
 @property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
 .btn::after,.btn-outline::after,.btn-block::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--ang),transparent 0 70%,rgba(255,255,255,.9) 85%,transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none;animation:btnAng 3.2s linear infinite}
-@media(max-width:640px){.hero{padding:20px 0 30px}.hero h1{font-size:23px;line-height:1.15;margin-bottom:12px}.mockup-img{max-width:220px;margin-bottom:14px;animation:none}.lead{font-size:14px;line-height:1.5;margin-bottom:8px}.ctas{margin-bottom:0;gap:12px}.btn{padding:14px 20px;font-size:14px}}
+@media(max-width:640px){.hero{padding:24px 0 34px}.hero h1{font-size:26px;line-height:1.18;margin-bottom:14px}.mockup-img{max-width:300px;margin-bottom:16px;animation:none}.lead{font-size:15px;line-height:1.55;margin-bottom:10px}.ctas{margin-bottom:0;gap:12px}.btn{padding:15px 20px;font-size:14px}}
 @keyframes btnAng{to{--ang:360deg}}
 </style>
 </head>
